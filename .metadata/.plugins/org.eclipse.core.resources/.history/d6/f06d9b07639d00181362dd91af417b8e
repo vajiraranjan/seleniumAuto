@@ -1,0 +1,19 @@
+package pk1;
+
+public class StringManupu {
+
+	public static void main(String[] args) 
+	{
+		String s="I have 5yrs experience in software industry";
+		
+		System.out.println(s.length());
+		
+		System.out.println(s.charAt(10));
+		
+		System.out.println(s.indexOf("e"));
+		
+		System.out.println(s.indexOf("e", 6));
+
+	}
+
+}

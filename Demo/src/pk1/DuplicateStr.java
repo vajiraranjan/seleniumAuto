@@ -1,0 +1,64 @@
+package pk1;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class DuplicateStr {
+
+	public static void main(String[] args) 
+	{
+		String names[]= {"php","c","c","java","python","ruby","perl","java"};
+		for(int i=0;i<names.length;i++)
+		{
+			for(int j=i+1;j<names.length;j++)
+				if(names[i].equals(names[j]))
+				{
+					System.out.println("Duplicate string:::" +names[i]);
+				}
+		}
+		
+		//Using Hashset:: JAVA collection: stores unique value
+		//o(n)
+		
+		Set<String> store = new HashSet<String>();
+		for(String name:names)
+		{
+			if(store.add(name)==false)
+			{
+				System.out.println("Duplicate String:::" +name);
+			}
+		}
+		
+		System.out.println("************");
+		//Using HashMap:: JAVA collection: Stores value(either single or duplicate) with occurences.
+		
+		Map<String, Integer> st = new HashMap<String, Integer>();
+		for(String nam:names)
+		{
+			Integer count= st.get(nam);
+			if(count==null)
+			{
+				st.put(nam, 1);
+			}
+			else
+			{
+				st.put(nam, ++count);
+			}
+		}
+		
+		Set<Entry<String, Integer>> entryset = st.entrySet();
+		for(Entry<String, Integer> entry:entryset)
+		{
+			if(entry.getValue()>1)
+			{
+				System.out.println("HashMap Duplicate String:::" +entry.getKey());
+			}
+		}
+		
+		
+	}
+
+}

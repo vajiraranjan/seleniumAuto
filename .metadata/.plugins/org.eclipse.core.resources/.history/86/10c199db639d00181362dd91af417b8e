@@ -1,0 +1,29 @@
+package pk1;
+
+public class StringManupu {
+
+	public static void main(String[] args) 
+	{
+		String s="I have 5yrs experience in software industry";
+		
+		String s1="I have 5yrs Experience in software industry";
+		
+		System.out.println(s.length());
+		
+		System.out.println(s.charAt(10));
+		
+		System.out.println(s.indexOf("e"));
+		
+		System.out.println(s.indexOf("e",(s.indexOf("e"))+1 ));
+		
+		System.out.println(s.substring(5));
+		
+		System.out.println(s.indexOf("in"));
+		
+		System.out.println(s.indexOf("my"));
+		
+		System.out.println(s.equals(s1));
+
+	}
+
+}

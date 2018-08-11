@@ -1,0 +1,26 @@
+package pk1;
+
+public class swapint {
+
+	public static void main(String[] args) 
+	{
+		int x=5;
+		int y=10;
+		
+		//int t;
+		//t=x;
+		//x=y;
+		//y=t;
+		
+	//	without using third variable
+		
+		x=x%y;
+		x=x/y;
+		y=x;
+		
+		System.out.println(+x);
+		System.out.println(+y);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package pk1;
+
+public class swapstring {
+
+	public static void main(String[] args) 
+	{
+		String a= "hello";
+		String b="world";
+		
+		System.out.println("Before swap:::" );
+		System.out.println(a);
+		System.out.println(b);
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package pk1;
+
+public class DuplicateStr {
+
+	public static void main(String[] args) 
+	{
+		String names[]= {"php","oops","c","java","python","ruby","perl","java"};
+		for(int i=0;i<names.length;i++)
+		{
+			for(int j=i+1;j<names.length;j++)
+				if(names[i].equals(j))
+				{
+					System.out.println("Duplicate string:::" +names[i]);
+				}
+		}
+	}
+
+}

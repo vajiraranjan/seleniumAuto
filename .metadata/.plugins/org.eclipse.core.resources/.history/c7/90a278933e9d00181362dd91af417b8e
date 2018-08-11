@@ -1,0 +1,19 @@
+package pk1;
+
+public class ReverseInt {
+
+	public static void main(String[] args) 
+	
+	{
+		double num =123456.65;
+		double rev=0;
+		while(num!=0)
+		{
+			rev=rev*10+num%10;
+			num=num/10;
+		}
+		System.out.println("Reverse Integer is " +rev);
+
+	}
+
+}
