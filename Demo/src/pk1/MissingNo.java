@@ -1,6 +1,8 @@
 package pk1;
 
 public class MissingNo {
+	
+	//Missing no find
 
 	public static void main(String[] args) 
 	{

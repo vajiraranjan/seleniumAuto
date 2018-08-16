@@ -2,6 +2,13 @@ package pk1;
 
 public class ClassA {
 
+	/* Pattern *
+	     *
+		***
+	   *****
+	  *******
+	 *********
+	 */
 	public static void main(String[] args) {
 		
 		int odd=1,space=4;

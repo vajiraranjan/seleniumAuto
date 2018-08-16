@@ -3,6 +3,15 @@ package pk1;
 public class ClassB {
 
 	// Pattern Related Programs
+	/* 
+   1 
+  212 
+ 32123 
+4321234 
+ 32123 
+  212 
+   1 
+ */
 	public static void main(String[] args) 
 	{
 	
