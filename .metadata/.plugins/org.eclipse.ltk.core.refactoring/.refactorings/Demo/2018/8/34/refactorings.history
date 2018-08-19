@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;pk1.multimatrixdynamic.main().in&apos; in &apos;pk1.multimatrixdynamic.main()&apos; to field&#x0A;- Original project: &apos;Demo&apos;&#x0A;- Original element: &apos;pk1.multimatrixdynamic.main().in&apos;&#x0A;- Field name: &apos;in&apos;&#x0A;- Initialize field in method&#x0A;- Declared visibility: &apos;private&apos;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;in&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;pk1{multimatrixdynamic.java" name="in" selection="160 26" stamp="1534705251432" static="true" version="1.0" visibility="2"/>
+</session>
