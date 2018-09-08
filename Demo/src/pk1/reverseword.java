@@ -1,6 +1,7 @@
 package pk1;
 
-public class reverseword {
+public class reverseword 
+{
 
 	public static void main(String[] args) 
 	{
@@ -9,13 +10,16 @@ public class reverseword {
 		String rev="";
 		for(int i=0;i<=Spit.length-1;i++)
 		{
-			for(int j=Spit.length-1;j>=0;j--)
+			String word=Spit[i];
+			String revword="";
+			for(int j=word.length()-1;j>=0;j--)
 			{
-				rev = rev+ str.charAt(j)+ " ";
+				revword = revword+ word.charAt(j);
 			}
-			System.out.println(rev);
+			rev=rev+revword+ " ";
+			
 		}
-		
+		System.out.println(rev);
 		
 	}
 

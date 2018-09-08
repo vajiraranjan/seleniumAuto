@@ -2,35 +2,31 @@ package pk1;
 
 import java.util.Scanner;
 
-public class multimatrixdynamic {
+public class multimatrixdynamic 
+{
 
 	private static Scanner in;
 
 	public static void main(String[] args) 
 	{
-		int m,n,c,d,p,q,k,sum=0;
+		int sum=0;
 		
 		in = new Scanner(System.in);
-		System.out.println("Enter no of row and column of 1st Matrix");
-		m=in.nextInt();
-		n=in.nextInt();
-		
+		int m=in.nextInt();
+		int n=in.nextInt();
 		int first[][]=new int[m][n];
 		System.out.println("Enter element of 1st Matrix");
 		
-		for(c=0;c<m;c++)
+		for(int c=0;c<m;c++)
 		{
-			for(d=0;d<n;d++)
+			for(int d=0;d<n;d++)
 			{
 				first[c][d]=in.nextInt();
 			}
 		}
-	
-		
 		System.out.println("Enter no of row and column of 2nd matrix");
-		p=in.nextInt();
-		q=in.nextInt();
-		
+		int p=in.nextInt();
+		int q=in.nextInt();
 		if(n!=p)
 		{
 			System.out.println("Multiplication is not possible");
@@ -41,13 +37,20 @@ public class multimatrixdynamic {
 			int mul[][]=new int[m][q];
 			System.out.println("Enter element of 2nd Matrix");
 			
-			for(c=0;c<p;c++)
+			for(int c=0;c<p;c++)
 			{
-				for(d=0;d<q;d++)
+				for(int d=0;d<q;d++)
 				{
-					for(k=0;k<p;k++)
+					second[c][d]=in.nextInt();
+				}
+			}
+			for(int c=0;c<m;c++)
+			{
+				for(int d=0;d<q;d++) 
+				{
+					for(int k=0;k<p;k++)
 					{
-						sum=sum+first[m][k]*second[k][q];
+						sum=sum+first[c][k]*second[k][d];
 					}
 					mul[c][d]=sum;
 					sum=0;
@@ -56,11 +59,11 @@ public class multimatrixdynamic {
 			}
 			System.out.println("Resultant Product is");
 			
-			for(c=0;c<m;c++)
+			for(int c=0;c<m;c++)
 			{
-				for(d=0;d<q;d++)
+				for(int d=0;d<q;d++)
 				{
-					System.out.print(mul[m][q] + " ");
+					System.out.print(mul[c][d] + " ");
 				}
 				System.out.println();
 			}
